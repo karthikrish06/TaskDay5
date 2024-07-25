@@ -1,0 +1,100 @@
+let myResume={
+  "basics": {
+    "name": "KARTHICK KRISHNAN",
+    "email": "karthikrish066@gmail.com",
+    "phone": 9786287674,
+    "degree": "B.E",
+    "location": {
+      "address": "36B Artha Royale Park Phase2 BLB Ramanujar Town Arch",
+      "postalCode": 600127,
+      "city": "Chennai",
+      "state": "Tamilnadu",
+      "country": "India"
+    },
+    "profiles": [
+      {
+        "website": "https://www.linkedin.com/in/-/",
+        "github":"https://github.com/karhikrish06/",
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "cognizant tech soln",
+      "position": "Senior Executive",
+      "startDate": "2023-10-11",
+      "endDate": "2024-07-15",
+      "summary": "i am doing day to day works and sending report to manager at EOD",
+    },
+  ],
+  "education": [
+    {
+      "institution": "Saveetha Engineering College",
+      "department": "ECE",
+      "studyType": "fulltime",
+      "batch start year": 2012,
+      "batch end year": 2016,
+      "gpa": 6.4,
+    }
+  ],
+  "skills": [
+    {
+      "name": "javascript",
+      "level": "beginner",
+      "project": [
+        "sewage monitoring system using python language"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Tamil,English",
+    }
+  ],
+  "interests": [
+    {
+      "name": "Cricket,Farming,youtuber,",
+    }
+  ]
+}
+console.log(myResume);
+
+  var json = [{
+    "id" : "karthick", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "karthikrish066@gmail.com"
+},
+{
+    "id" : "sanjay", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "sanjay07@gmail.com"
+}];
+//for loop
+for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.id);
+    console.log(obj.msg);
+    console.log(obj.task);
+    console.log(obj.mail);
+
+}
+//for Each
+json.forEach(function(obj) { console.log(obj.msg); });
+
+//for In
+for (var key in json) {
+if (json.hasOwnProperty(key)) {
+  console.log(json[key].id);
+  //console.log(json[key].msg);
+ 
+}
+}
+//for Of
+let text = "";
+for (let x of json[key].id) {
+ text += x; 
+}
+ console.log(text);
